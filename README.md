@@ -37,8 +37,8 @@
 
 ### Anggota Kelompok
 
-1. **Rezza Maulana** (103062300001) - Ketua Kelompok
-2. **Anisa Putri Rahayu** (103062300002) - Anggota
+1. **Muhammad Dwiky Yanuarezza** (1202230031) - Ketua Kelompok
+2. **Muhammad Afrizal** (103062300002) - Anggota
 3. **Budi Santoso** (103062300003) - Anggota
 4. **Citra Dewi Lestari** (103062300004) - Anggota
 
