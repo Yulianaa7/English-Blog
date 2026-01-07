@@ -19,12 +19,12 @@ const dosenData = {
 const anggotaKelompok = [
     {
         id: 1,
-        nama: "Rezza Maulana",
-        nim: "103062300001",
+        nama: "Muhammad Dwiky Yanuarezza",
+        nim: "1202230031",
         role: "Ketua Kelompok",
-        foto: "assets/images/anggota1.jpg",
-        bio: "Mahasiswa Teknik Informatika yang passionate dalam dunia teknologi dan bahasa. Fokus pada pengembangan web dan pembelajaran Bahasa Inggris.",
-        email: "rezza@student.telkomuniversity.ac.id"
+        foto: "assets/images/Rezza.jpeg",
+        bio: "I am an Information Technology student with a keen interest in technology development and programming. Outside of my academic activities, I enjoy exercising as a way to maintain a balance between my physical and mental well-being. The presence of artificial intelligence has been very helpful to me, as it has enabled me to work more efficiently when coding and has improved my productivity and quality of learning in the field of technology.",
+        email: "dwikyrezza@student.telkomuniversity.ac.id"
     },
     {
         id: 2,
@@ -59,26 +59,84 @@ const anggotaKelompok = [
 const artikelData = [
     {
         id: 1,
-        judul: "The Importance of English in the Digital Era",
-        ringkasan: "Explore how English has become the universal language of technology and digital communication, opening doors to global opportunities.",
+        judul: "AI Tools: Efficiency at the Cost of Real-World Readiness?",
+        ringkasan: "AI tools significantly improve efficiency for IT students, but overreliance risks weakening critical thinking and real-world readiness. Without deep understanding, this efficiency may create an illusion of mastery that leaves graduates unprepared for professional challenges.",
 
-        // ESSAY - Main Article Content
         konten: `
-            <h2>Introduction</h2>
-            <p>In today's interconnected world, English has emerged as the lingua franca of the digital age. From programming languages to social media platforms, English dominates the technological landscape.</p>
-            
-            <h2>Why English Matters in Technology</h2>
-            <p>Most programming languages use English syntax and keywords. Documentation, tutorials, and technical forums are predominantly in English. This makes English proficiency essential for anyone pursuing a career in technology.</p>
-            
-            <h2>Global Communication</h2>
-            <p>Social media, online collaboration tools, and international business communications rely heavily on English. Understanding English opens doors to networking with professionals worldwide.</p>
-            
-            <h2>Career Opportunities</h2>
-            <p>Companies increasingly require English skills for tech positions. Whether you're a developer, designer, or project manager, English proficiency significantly enhances your career prospects.</p>
-            
-            <h2>Conclusion</h2>
-            <p>Mastering English in the digital era is not just an advantage—it's a necessity. Start improving your English skills today to unlock global opportunities in technology and beyond.</p>
-        `,
+    <p>
+        The rapid ascent of <span class="keyword-highlight">Artificial Intelligence (AI)</span> has initiated a major transformation in the fields of Information Technology and Computer Science.
+        Tools such as <span class="important-term">ChatGPT</span> and <span class="important-term">GitHub Copilot</span> provide instant assistance, enabling students to complete academic tasks with remarkable speed.
+        While this efficiency is appealing, excessive dependence on AI tools raises serious concerns about students’ <span class="keyword-highlight">real-world readiness</span>.
+    </p>
+
+    <h2>Efficiency and Academic Performance</h2>
+    <p>
+        Research indicates that AI tools can improve short-term academic outcomes by accelerating debugging, reducing cognitive load, and assisting conceptual understanding.
+        A randomized controlled trial conducted by <span class="important-term">Nie et al. (2025)</span> found that students who actively adopted GPT-based tools demonstrated performance improvements.
+        However, when considering the broader student population, overall exam performance declined after the introduction of AI tools, suggesting unintended negative consequences.
+    </p>
+
+    <div class="key-points-box">
+        <h3>Advantages of AI Tools</h3>
+        <ul>
+            <li>Faster task completion and debugging</li>
+            <li>Immediate feedback and explanations</li>
+            <li>Increased confidence and self-efficacy</li>
+            <li>Reduced mental effort during problem solving</li>
+        </ul>
+    </div>
+
+    <h2>The Cost of Overreliance</h2>
+    <p>
+        Despite their benefits, AI tools may bypass the essential <span class="keyword-highlight">cognitive struggle</span> required for deep learning.
+        Studies warn that students often prioritize output correctness over understanding, resulting in weakened
+        <span class="important-term">critical thinking</span>, <span class="important-term">algorithmic reasoning</span>, and manual debugging skills.
+        This pattern encourages <span class="keyword-highlight">surface learning</span>, which is insufficient for professional software engineering.
+    </p>
+
+    <blockquote>
+        “Efficiency without understanding creates an illusion of mastery that quickly collapses in real-world scenarios.”
+    </blockquote>
+
+    <h2>Risks in Professional Environments</h2>
+    <p>
+        In real-world software development, AI-generated solutions can be <span class="keyword-highlight">factually incorrect</span>,
+        logically inconsistent, or insecure.
+        According to <span class="important-term">Garousi et al. (n.d.)</span>, uncritical reliance on AI artifacts without rigorous human validation
+        can introduce undetected defects and security vulnerabilities.
+        Professional engineers must therefore retain strong verification and problem-solving abilities.
+    </p>
+
+    <h2>Responsible Use of AI in Education</h2>
+    <p>
+        To mitigate these risks, educational institutions must implement structured strategies that emphasize
+        <span class="important-term">verification, transparency, and ethical AI use</span>.
+        Students should be trained to critique AI-generated outputs, understand model limitations, and cross-check results with trusted sources.
+        Assignments focusing on validating flawed AI outputs can reinforce deep learning and professional readiness.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+        AI tools undeniably enhance efficiency in academic settings, but efficiency without deep understanding
+        leaves students unprepared for unpredictable real-world challenges.
+        True mastery in technology demands intellectual effort, critical evaluation, and the ability to operate independently of automated systems.
+        AI should serve as a support tool—not a replacement for human reasoning.
+    </p>
+
+    <div class="references-section">
+        <h2>References</h2>
+        <ul class="references-list">
+            <li>Nie, Y., et al. (2025). The impact of large language models on student performance in coding education.</li>
+            <li>Garousi, V., et al. (n.d.). Responsible use of generative AI in software engineering.</li>
+            <li>Elnaffar, S., et al. (2025). AI-assisted learning and its impact on student cognition.</li>
+            <li>Vieriu, D., & Petrea, M. (2025). Surface learning risks in AI-supported education.</li>
+            <li>Bearman, M., et al. (2023). Trust, authority, and AI in higher education.</li>
+            <li>Sasikala, S., & Ravichandran, D. (2024). Human-centric learning in technology education.</li>
+        </ul>
+    </div>
+`,
+
+
 
         // SLIDE PRESENTATION - Link to Google Slides or embedded presentation
         slideUrl: "https://docs.google.com/presentation/d/e/2PACX-1vSample/embed",
@@ -86,60 +144,60 @@ const artikelData = [
 
         // ANNOTATED TEXT - Text with annotations and explanations
         annotatedText: `
-            <div class="annotated-section">
-                <h3>Introduction - The Digital Age and English</h3>
-                <p class="annotated-paragraph">
-                    In today's <span class="annotation" data-note="Connected through internet and technology">interconnected</span> world, 
-                    English has emerged as the <span class="annotation" data-note="A common language used for communication between different groups">lingua franca</span> 
-                    of the digital age.
-                </p>
-                <div class="annotation-note">
-                    <strong>Key Term:</strong> "Lingua franca" refers to a bridge language used between people who do not share a native language.
-                </div>
-            </div>
-            
-            <div class="annotated-section">
-                <h3>Technology and English</h3>
-                <p class="annotated-paragraph">
-                    Most <span class="annotation" data-note="Languages like Python, JavaScript, Java">programming languages</span> 
-                    use English <span class="annotation" data-note="Grammar rules and structure">syntax</span> and keywords.
-                </p>
-                <div class="annotation-note">
-                    <strong>Example:</strong> In Python, we write "print()", "if", "else", "class" - all English words.
-                </div>
-            </div>
-            
-            <div class="annotated-section">
-                <h3>Global Impact</h3>
-                <p class="annotated-paragraph">
-                    Understanding English <span class="annotation" data-note="Creates opportunities and access">opens doors</span> 
-                    to networking with professionals <span class="annotation" data-note="All around the world">worldwide</span>.
-                </p>
-                <div class="annotation-note">
-                    <strong>Statistics:</strong> Over 1.5 billion people speak English globally, with 750 million as non-native speakers.
-                </div>
-            </div>
-        `,
+    <div class="annotated-section">
+        <h3>AI and Learning Efficiency</h3>
+        <p class="annotated-paragraph">
+            AI tools improve <span class="annotation" data-note="The ability to complete tasks faster and with less effort">efficiency</span>
+            by providing instant feedback and automated coding assistance.
+        </p>
+        <div class="annotation-note">
+            <strong>Explanation:</strong> Efficiency helps students finish tasks quickly but does not always ensure deep understanding.
+        </div>
+    </div>
+    
+    <div class="annotated-section">
+        <h3>Overreliance on AI Tools</h3>
+        <p class="annotated-paragraph">
+            Excessive dependence on AI can reduce
+            <span class="annotation" data-note="The ability to analyze, evaluate, and solve problems independently">critical thinking</span>
+            and encourage surface-level learning.
+        </p>
+        <div class="annotation-note">
+            <strong>Key Insight:</strong> Treating AI as a primary problem-solver weakens foundational technical skills.
+        </div>
+    </div>
+    
+    <div class="annotated-section">
+        <h3>Professional Consequences</h3>
+        <p class="annotated-paragraph">
+            In real-world development, AI-generated code may contain
+            <span class="annotation" data-note="Errors or vulnerabilities that are not immediately visible">undetected issues</span>
+            that require human verification.
+        </p>
+        <div class="annotation-note">
+            <strong>Important:</strong> Human oversight remains essential to ensure reliability and security.
+        </div>
+    </div>
+`,
+
 
         // SELF INTRODUCTORY PARAGRAPH - Author's personal introduction
         selfIntro: `
-            <p>Hello! My name is <strong>Rezza Maulana</strong>, and I am a passionate Informatics Engineering student at Telkom University. 
-            As someone deeply interested in technology and software development, I have experienced firsthand how crucial English proficiency 
-            is in the tech industry. Throughout my academic journey, I've worked on various programming projects, read countless technical 
-            documentation, and participated in international coding communities—all of which require strong English skills.</p>
-            
-            <p>I created this article to share my insights on why English has become indispensable in our digital world. My goal is to 
-            encourage fellow students and aspiring tech professionals to invest time in improving their English, as it will undoubtedly 
-            open numerous opportunities in their careers. Through this blog, I hope to combine my passion for technology with effective 
-            communication to help others navigate the intersection of language and digital innovation.</p>
-        `,
+    <p>Hello! My name is <strong>Muhammad Dwiky Yanuarezza</strong>, and I am an Information Technology student with a strong interest in software development and emerging technologies.
+    Beyond academics, I enjoy staying active through sports, which helps me maintain balance and discipline in my daily life.</p>
+    
+    <p>I created this article to share my perspective on how Artificial Intelligence has positively impacted my learning experience, particularly in improving efficiency when working with code.
+    AI tools allow me to optimize my time, focus on understanding core concepts, and increase productivity. Through this blog, I aim to reflect on the responsible use of AI—leveraging its benefits without losing the critical thinking skills essential for real-world challenges.</p>
+`,
+
 
         tanggal: "2024-12-15",
         kategori: "Technology",
-        thumbnail: "assets/images/article1.jpg",
-        gambarHeader: "assets/images/article1-header.jpg",
+        thumbnail: "assets/images/AI Tools Efficiency at the Cost of.png",
+        gambarHeader: "assets/images/AI Tools Efficiency at the Cost of.png",
         penulisId: 1,
         readTime: "5 min read"
+
     },
     {
         id: 2,

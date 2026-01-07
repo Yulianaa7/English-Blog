@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Browse all English learning articles - Grammar, Vocabulary, Pronunciation, Academic Writing">
+    <meta name="keywords" content="english articles, learning resources, blog posts">
+
+    <title>All Articles - EnglishHub</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ==================== HEADER & NAVIGATION ==================== -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/telkom-university-seeklogo.png" alt="Telkom University" class="logo-image">
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="articles.html" class="nav-link active">Articles</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="articles.html" class="nav-cta">View Essays</a>
+        </nav>
+    </header>
+
+    <!-- ==================== PAGE HEADER ==================== -->
+    <section class="page-header">
+        <div class="container">
+            <h1>All Articles</h1>
+            <p>Explore our collection of English learning resources</p>
+        </div>
+    </section>
+
+    <!-- ==================== SEARCH & FILTER ==================== -->
+    <section class="search-filter-section">
+        <div class="container">
+            <!-- Search Box -->
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search articles by title, category, or content..."
+                    autocomplete="off">
+                <button id="search-btn">Search</button>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-kategori="all">All Articles</button>
+                <button class="filter-btn" data-kategori="Technology">Technology</button>
+                <button class="filter-btn" data-kategori="Learning">Learning</button>
+                <button class="filter-btn" data-kategori="Academic">Academic</button>
+            </div>
+
+            <!-- Result Count -->
+            <p class="result-count" id="result-count">Showing all articles</p>
+        </div>
+    </section>
+
+    <!-- ==================== ARTIKEL LIST ==================== -->
+    <section id="articles">
+        <div class="container">
+            <!-- Artikel Grid - Filled by JavaScript -->
+            <div class="artikel-grid" id="artikel-container">
+                <!-- Article cards will be rendered by main.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- About Section -->
+                <div class="footer-section">
+                    <h3>About EnglishHub</h3>
+                    <p>An English learning platform for Telkom University students. We provide quality articles to help
+                        you master the English language.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@englishhub.edu</p>
+                    <p>Telkom University</p>
+                    <p>Bandung, Indonesia</p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 EnglishHub - Telkom University. English Course Project Semester 5.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

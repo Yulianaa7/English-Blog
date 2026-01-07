@@ -5,9 +5,9 @@
 
 // ==================== UTILITAS ====================
 
-// Format tanggal ke bahasa Indonesia
+// Format date to English
 function formatTanggal(tanggalStr) {
-    const bulan = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Oct', 'Nov', 'Des'];
+    const bulan = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const date = new Date(tanggalStr);
     return `${date.getDate()} ${bulan[date.getMonth()]} ${date.getFullYear()}`;
 }
@@ -26,7 +26,7 @@ function renderArtikelList(artikelList) {
     if (!container) return;
 
     if (artikelList.length === 0) {
-        container.innerHTML = '<div class="no-results"><p>Tidak ada artikel ditemukan.</p></div>';
+        container.innerHTML = '<div class="no-results"><p>No articles found.</p></div>';
         return;
     }
 
@@ -53,7 +53,7 @@ function renderArtikelList(artikelList) {
                             <span class="penulis-nama">${penulis.nama}</span>
                         </div>
                         <a href="article.html?id=${artikel.id}" class="read-more">
-                            Baca Selengkapnya →
+                            Read More →
                         </a>
                     </div>
                 </div>
@@ -87,7 +87,7 @@ function implementSearch() {
         // Update result count
         const resultCount = document.getElementById('result-count');
         if (resultCount) {
-            resultCount.textContent = `Menampilkan ${results.length} artikel`;
+            resultCount.textContent = `Showing ${results.length} articles`;
         }
     }
 
@@ -129,7 +129,7 @@ function implementFilter() {
             // Update result count
             const resultCount = document.getElementById('result-count');
             if (resultCount) {
-                resultCount.textContent = `Menampilkan ${filtered.length} artikel`;
+                resultCount.textContent = `Showing ${filtered.length} articles`;
             }
         });
     });
@@ -177,10 +177,29 @@ function renderArtikelDetail() {
         `;
     }
 
-    // 1. Render ESSAY content (main article)
+    // 1. Render ESSAY content (main article) with enhanced format
     const contentSection = document.getElementById('article-body');
     if (contentSection) {
-        contentSection.innerHTML = artikel.konten;
+        contentSection.innerHTML = `
+            <!-- Featured Image -->
+            <div class="essay-featured-image">
+                <img src="${artikel.gambarHeader}" alt="${artikel.judul}">
+            </div>
+            
+            <!-- Author Meta Info -->
+            <div class="essay-meta-info">
+                <img src="${penulis.foto}" alt="${penulis.nama}" class="essay-author-avatar">
+                <div class="essay-author-details">
+                    <h4>By ${penulis.nama}</h4>
+                    <p>${formatTanggal(artikel.tanggal)} • ${artikel.readTime}</p>
+                </div>
+            </div>
+            
+            <!-- Essay Content -->
+            <div class="essay-content">
+                ${artikel.konten}
+            </div>
+        `;
     }
 
     // 2. Render SLIDE presentation
@@ -279,7 +298,7 @@ function renderArtikelDetail() {
                     <h3>${penulis.nama}</h3>
                     <p class="author-role">${penulis.role}</p>
                     <p class="author-bio">${penulis.bio}</p>
-                    <a href="about.html" class="btn-primary">Lihat About</a>
+                    <a href="about.html" class="btn-primary">View About</a>
                 </div>
             </div>
         `;
@@ -483,6 +502,13 @@ document.addEventListener('DOMContentLoaded', () => {
         case 'index.html':
         case '':
             // Home page
+            renderArtikelList(artikelData);
+            implementSearch();
+            implementFilter();
+            break;
+
+        case 'articles.html':
+            // Articles page - same as home but without hero
             renderArtikelList(artikelData);
             implementSearch();
             implementFilter();

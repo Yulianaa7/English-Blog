@@ -18,13 +18,16 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero-new.css">
 </head>
 
 <body>
     <!-- ==================== HEADER & NAVIGATION ==================== -->
     <header>
         <nav class="container">
-            <a href="index.html" class="logo">EnglishHub</a>
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/telkom-university-seeklogo.png" alt="Telkom University" class="logo-image">
+            </a>
 
             <!-- Mobile Menu Toggle -->
             <div class="menu-toggle" id="menu-toggle">
@@ -36,16 +39,52 @@
             <!-- Navigation Menu -->
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="articles.html" class="nav-link">Articles</a></li>
             </ul>
+
+            <!-- CTA Button -->
+            <a href="articles.html" class="nav-cta">View Essays</a>
         </nav>
     </header>
 
     <!-- ==================== HERO SECTION ==================== -->
     <section class="hero">
         <div class="hero-content container">
-            <h1>About EnglishHub</h1>
-            <p>Empowering Students Through English Learning</p>
+            <div class="hero-left">
+                <p class="hero-label">ENGLISH II — FINAL ASSIGNMENT</p>
+                <h1>Knowing our<span class="highlight-text"> Projects</span></h1>
+                <p class="hero-description">EnglishHub is an English learning blog platform developed as a project
+                    assignment
+                    for the English course, Semester 5, Telkom University. This project aims to provide quality
+                    educational
+                    content that helps students improve their English skills.</p>
+                <div class="hero-buttons">
+                    <a href="#team" class="btn-primary">View Team Members</a>
+                    <a href="articles.html" class="btn-secondary">Read Articles</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-card">
+                    <div class="card-browser">
+                        <div class="browser-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="assets/images/About.png" alt="Team Collaboration">
+                    </div>
+                    <div class="card-label">
+                        <div class="label-icon">👥</div>
+                        <div class="label-text">
+                            <h4>Team Collaboration</h4>
+                            <p>Learning Together</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -54,17 +93,6 @@
         <div class="container">
             <div class="about-content">
                 <!-- Tentang Project -->
-                <div class="about-section">
-                    <h2>Tentang Project</h2>
-                    <p>EnglishHub adalah platform blog pembelajaran Bahasa Inggris yang dikembangkan sebagai project
-                        tugas mata kuliah Bahasa Inggris, Semester 5, Telkom University. Project ini bertujuan untuk
-                        menyediakan konten edukatif berkualitas yang membantu mahasiswa meningkatkan kemampuan Bahasa
-                        Inggris mereka.</p>
-
-                    <p>Website ini dibangun menggunakan teknologi frontend modern (HTML5, CSS3, JavaScript) dengan
-                        pendekatan static/client-side only, sehingga dapat diakses dengan mudah tanpa memerlukan backend
-                        atau database.</p>
-                </div>
 
                 <!-- Dosen Pengampu -->
                 <div class="about-section">
@@ -75,7 +103,7 @@
                 </div>
 
                 <!-- Anggota Kelompok -->
-                <div class="about-section">
+                <div class="about-section" id="team">
                     <h2>Anggota Kelompok</h2>
                     <div class="team-grid" id="team-members">
                         <!-- Will be filled by JavaScript -->
