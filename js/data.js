@@ -32,7 +32,7 @@ const anggotaKelompok = [
         nim: "1202230029",
         role: "Anggota",
         foto: "assets/images/afrizal.jpg",
-        bio: "Mahasiswa Teknik Informatika dengan minat pada pembelajaran bahasa dan teknologi pendidikan. Aktif di organisasi kampus.",
+        bio: "I am an Information Technology student who is deeply passionate about the intersection of Internet of Things (IoT) and Artificial Intelligence. I believe that the future of technology lies in how we can make our physical environment smarter and more responsive through data-driven insights. In my spare time, I love exploring new gadgets and working on small hardware projects to sharpen my technical skills. My goal is to use my knowledge of AI to create innovative solutions that can solve real-world problems and make daily life more efficient for everyone.",
         email: "afrizalrizkys@student.telkomuniversity.ac.id"
     },
     {
